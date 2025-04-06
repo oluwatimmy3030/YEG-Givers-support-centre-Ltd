@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+header{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  position: fixed;
+}
+.red-top{
+  width: 100%;
+  height: 40px;
+  background-color: #ad0000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-inline: 20px;
+  align-items: center;
+}
+.top-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-left: 50px;
+}
+.top-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+    gap: 35px;
+}
+.white{
+    display: flex;
+    justify-content: space-between;
+     margin-inline: auto;
+     align-items: center;
+
+   
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-right: 60px;
+  text-decoration: none;
+  /* margin-bottom: 15px; */
+
+  
+}
+.links {
+  text-decoration: none;
+  display: flex;
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+ 
+}
+.links li  {
+    list-style-type: none; 
+}
+.links li a {
+  text-decoration: none;
+  color: #000;          
+}
+.btnn{
+  background-color: #ad0000;
+  color: #fff;
+  padding: 7px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.btnn:hover{
+  color: #fff;
+ background-color: #960404;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: 60px ;
+  padding: none;
+  line-height: 0;
+  /* margin-bottom: 90px; */
+                                          
+}
+.logo img{
+  height: 100px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  /* vertical-align: middle; */
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 0;
+}
+.logo h1{
+  font-size: 20px;
+  font-weight: 200;
+  color: #000;
+  margin-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo h1 span{
+  font-weight: 100;
+  font-style: italic;
+  font-size: 14px;
+  color: #ad0000;
+}
+.menu{
+  background-color: #000;
+  color: #fff;
+  padding: 7px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  display: none;
+  z-index: 9999;
+}
+.menu:hover{
+  color: #fff;
+ background-color: #00000099;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999 !important;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: #4d4a49;
+  /* backdrop-filter: blur(20px); */
+  /* border: medium solid red; */
+}
+
+.sidenav a {
+  padding: 20px 20px 20px 32px;
+
+  text-decoration: none;
+  font-size: 25px;
+  color: #fbf7f7;
+  display: block;
+  transition: 0.3s;
+  font-weight: 600;
+  font-family: "Playwrite GB S", serif;
+  z-index: 1000;
+
+}
+
+.sidenav a:hover {
+  color: #151414;
+  background-color: #f1f1f1;
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 36px;
+  margin-left: 0;
+}
+.secone{
+/* padding-top: 110px; */
+z-index: 1;
+top: 110px;
+position: relative;
+
+}
+.carousel-inner{
+  z-index: 1 !important;
+  position: relative;
+}
+.itemone{
+  height: 85vh;
+  background-image: url(./image/h1_hero1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.itemtwo{
+  height: 85vh;
+  background-image: url(./image/h1_hero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.itemthree{
+  height: 85vh;
+  background-image: url(./image/services-img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.one{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-family: "Playwrite GB S", serif;
+
+}
+.oneh1{
+  font-size: 60px;
+}
+.one p{
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
