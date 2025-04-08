@@ -89,6 +89,18 @@
   .top-right{
     margin-right: 20px
 }
+  .oneh1{
+    font-size: 35px;
+  }
+  .onep{
+    font-size: 18px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .menu{
+    margin-right: 0;
+  }
 }
 @media (max-width: 570px) {
   .red-top{
@@ -118,6 +130,15 @@
   .ptag{
     font-size: 16px;
     line-height: 20px;
+  }
+  .card1{
+    width: 18rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .card1{
+    width: 12rem;
   }
 }
 @media (max-width: 335px) {

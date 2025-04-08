@@ -206,6 +206,7 @@ position: relative;
   z-index: 1 !important;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
  
 }
 .itemtwo{
@@ -214,6 +215,7 @@ position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1 !important;
+  object-fit: cover;
   
 }
 .itemthree{
@@ -222,6 +224,7 @@ position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1 !important;
+  object-fit: cover;
   
 }
 .one{
@@ -253,11 +256,14 @@ position: relative;
   gap: 4rem;
   padding: 1rem;
   scroll-behavior: auto;
+  /* scroll-snap-type: x mandatory; */
 }
+
 
 .card1 {
   flex: 0 0 auto;
-  width: 18rem;
+  /* width: 18rem; */
+  /* scroll-snap-align: start; */
   transition: all  0.3s ease-in-out;
 }
 .card1:hover{
@@ -327,6 +333,123 @@ position: relative;
   top: 290px;
 
 }
+
+
+.main-footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  position: relative;
+  top: 290px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1 1 200px;
+}
+
+.footer-box h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-box ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+  color: #e41313;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-form button {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #960404;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #e41313;
+}
+.logo2{
+  display: flex;
+  align-items: center;
+  border: none;
+  /* margin-left: 60px ; */
+  padding: none;
+  line-height: 0;
+  /* margin-bottom: 90px; */
+                                          
+}
+.logo2 img{
+  height: 100px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  /* vertical-align: middle; */
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 0;
+}
+.logo-txt2 span{
+  color: #960404;
+}
+.logo-txt2{
+  font-size: 23px;
+}
+.logo-txt2 h1{
+  font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.copyright{
+  margin-bottom: 0;
+  margin-top: 100px;
+  
+}
+.copyright span{
+  color: #ed0707;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
 
 
 
