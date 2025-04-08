@@ -9,6 +9,7 @@ header{
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
   position: fixed;
+  z-index: 50;
 }
 .red-top{
   width: 100%;
@@ -71,7 +72,12 @@ header{
 }
 .links li a {
   text-decoration: none;
-  color: #000;          
+  color: #000;
+  transition: all 0.3s ease-in-out;          
+}
+.links li a:hover{
+  color: #960404;
+  box-shadow: 0 0 10px 2px #9604049d;
 }
 .btnn{
   background-color: #ad0000;
@@ -87,7 +93,7 @@ header{
 }
 .btnn:hover{
   color: #fff;
- background-color: #960404;
+ background-color: #520101;
 }
 .logo{
   display: flex;
@@ -145,7 +151,7 @@ header{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 9999 !important;
+  z-index: 999 !important;
   top: 0;
   right: 0;
   overflow-x: hidden;
@@ -166,7 +172,7 @@ header{
   transition: 0.3s;
   font-weight: 600;
   font-family: "Playwrite GB S", serif;
-  z-index: 1000;
+
 
 }
 
@@ -185,18 +191,19 @@ header{
 }
 .secone{
 /* padding-top: 110px; */
-z-index: 1;
+z-index: -1 !important;
 top: 110px;
 position: relative;
 
 }
 .carousel-inner{
-  z-index: 1 !important;
+  /* display: none; */
   position: relative;
 }
 .itemone{
   height: 85vh;
   background-image: url(./image/h1_hero1.jpg);
+  z-index: 1 !important;
   background-repeat: no-repeat;
   background-size: cover;
  
@@ -206,6 +213,7 @@ position: relative;
   background-image: url(./image/h1_hero2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1 !important;
   
 }
 .itemthree{
@@ -213,6 +221,7 @@ position: relative;
   background-image: url(./image/services-img1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1 !important;
   
 }
 .one{
@@ -228,6 +237,103 @@ position: relative;
 .one p{
   font-size: 25px;
 }
+.sectwo{
+  position: relative;
+  top: 170px;
+}
+.h12{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 4rem;
+  padding: 1rem;
+  scroll-behavior: auto;
+}
+
+.card1 {
+  flex: 0 0 auto;
+  width: 18rem;
+  transition: all  0.3s ease-in-out;
+}
+.card1:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 10px  rgba(183, 5, 5, 0.782);
+}
+.card1:hover .tit{
+  color: #960404;
+}
+.card1:hover .btt{
+  background-color: #560202;
+}
+.secthree{
+  position: relative;
+  top: 240px;
+}
+.who{
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.ptag{
+  font-size: 20px;
+  margin-top: 60px;
+  line-height: 30px;
+}
+.span{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  color: #960404;
+}
+.bigd{
+  width: 90%;
+  margin-inline: auto; 
+}
+.secfour{
+  position: relative;
+  top: 300px;
+  background: radial-gradient(rgb(161, 3, 3),rgba(255, 255, 255, 0.407));
+}
+
+.txt{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 50px;
+}
+.cardp{
+  font-size: 22px;
+}
+.h{
+  transition: all  0.3s ease-in-out;
+  
+}
+.h:hover{
+  color: #960404;
+  transform: scale(1.04);
+  box-shadow: 0 0 10px  rgba(183, 5, 5, 0.782);
+}
+.secfive{
+  position: relative;
+  top: 300px;
+
+}
+.secsix{
+  position: relative;
+  top: 290px;
+
+}
+
+
+
+
+
+
+
 
 
 
