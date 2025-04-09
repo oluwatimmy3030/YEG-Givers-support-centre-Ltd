@@ -101,12 +101,12 @@
   .onep{
     font-size: 18px;
   }
-  .logo{
+  /* .logo{
     margin-left: 0;
   }
   .menu{
     margin-right: 0;
-  }
+  } */
 }
 @media (max-width: 570px) {
   .red-top{
