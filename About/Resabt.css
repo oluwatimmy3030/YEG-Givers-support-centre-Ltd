@@ -1,0 +1,46 @@
+@media(max-width: 1213px) {
+    .whoa{
+        margin-top: 0px;
+    }
+    .ptag{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 1019px) {
+    .whoa{
+        margin-top: 30px;
+    }
+    .ptag{
+        margin-top: 20px;
+    }
+    .em{
+        margin-left: 5px;
+        margin-right: 40px;
+    }
+    .join img{
+        width: 100%;
+    }
+}
+@media(max-width: 768px) {
+    .about h1{
+        font-size: 3rem;
+        left: 100px;
+    }
+    .author-box, .coauthor-box {
+        border-radius: 20px; /* Rounded on all corners on small screens */
+      }
+}
+
+@media(max-width: 400px) {
+    .about h1{
+        font-size: 2.5rem;
+        left: 60px;
+    }
+}
+@media(max-width: 400px) {
+    .about h1{
+        font-size: 2rem;
+        left: 50px;
+    }
+}
+
