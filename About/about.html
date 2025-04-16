@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,7 @@
             </div>
             <div class="white">
                 <div class="logo">
-                    <img src="../image/YEG-removebg-preview.png" alt="img">
+                   <a href="../index.html"><img src="../image/YEG-removebg-preview.png" alt="img"></a>
                     <div class="logo-txt ">
                         <h1> YEG <span>Givers Support Centre Ltd</span></h1>
                         
@@ -47,7 +48,7 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <button class=" btnn">Donate Now</button>
+                    <button class=" btnn" onclick="createRipple(event)" >Donate Now</button>
                
                     
                 </div>
@@ -60,19 +61,19 @@
             <a href="../Services/service.html">Services</a>
             <a href="#">Blog +</a>
             <a href="#">Contact</a>
-            <button class="btnn" style="margin-left: 20px; margin-top: 20px; padding: 10px 20px;">Donate Now</button>
+            <button class="btnn" onclick="createRipple(event)" style="margin-left: 20px; margin-top: 20px; padding: 10px 20px;">Donate Now</button>
           </div>               
         </nav>    
     </header>
-    <div class="about">
-        <div class="about-text text-light">
+    <div class="about scroll-animate slideUp">
+        <div class="about-text text-light slideUp">
             <h1>About Us</h1>
            
         </div>
         <div class="about-img">
          </div>
     </div>
-    <section class="secthree three">
+    <section class="secthree three scroll-animate slideUp">
         <div class="bigd d-flex">
            <div>
             <img src="../image/about.jpg" class="img-" alt="">
@@ -93,7 +94,7 @@
                
              
       </section>
-    <section class="secthree four">
+    <section class="secthree four scroll-animate slideUp">
         <div class="bigd d-flex">
            <div class="join">
             <img src="../image/joining1.jpg" width="550px" alt="">
@@ -108,7 +109,7 @@
             </p>
               <h1 class="who">
                 Our Mission</h1>
-              <p class="ptag ">To provide compassionate, inclusive, and accessible support services that uplift individuals and families through community engagement, mental wellness, and basic needs support.
+              <p class="ptag ">To provide compassionate, inclusive, and accessible support services that uplift individuals and families through community engagement, mental wellness, and basic needs support.
 
             </p>
              
@@ -116,7 +117,7 @@
                
              
       </section>
-      <section class="about-section">
+      <section class="about-section scroll-animate slideUp">
         <div class="box-container">
           <div class="info-box author-box">
             <h2>About Fadipe.O – CEO & Founder.</h2>
@@ -125,7 +126,7 @@
 
                 Fadipe holds a solid educational background in social sciences and human services, complemented by extensive professional experience in community outreach, non-profit work, and frontline support roles. This unique combination of academic knowledge and real-world service has equipped Fadipe with the tools to lead with both heart and strategy.
                 
-                With a passion for equity and inclusion, Fadipe continues to champion accessible support systems and inspire a culture of giving throughout Edmonton and beyond. Through YEG Givers, Fadipe empowers others to become change-makers in their communities, one act of kindness at a time.
+                With a passion for equity and inclusion, Fadipe continues to champion accessible support systems and inspire a culture of giving throughout Edmonton and beyond. Through YEG Givers, Fadipe empowers others to become change-makers in their communities, one act of kindness at a time.
             </p>
           </div>
           <div class="info-box coauthor-box">
@@ -135,17 +136,17 @@
 
                 In addition to her role at YEG Givers, Toyosi currently serves as an Educational Assistant, where she supports diverse learners and helps create inclusive, nurturing environments for students to thrive. Her hands-on experience in education complements her academic background, allowing her to connect with individuals of all ages and backgrounds in meaningful ways.
                 
-                Toyosi’s calm presence, conflict-resolution skills, and dedication to community healing have been instrumental in shaping the vision and programs of YEG Givers. She believes in the strength of unity, the importance of compassion, and the power of giving back.
+                Toyosi’s calm presence, conflict-resolution skills, and dedication to community healing have been instrumental in shaping the vision and programs of YEG Givers. She believes in the strength of unity, the importance of compassion, and the power of giving back.
             </p>
           </div>
         </div>
       </section>
-      <section class="secsix six" style="position: relative; height: 450px; background-image: url('../image/Asset-1@4x-100-1-scaled.jpg'); background-size: cover; background-position: center;">
+      <section class="secsix six scroll-animate slideUp"  style="position: relative; height: 450px; background-image: url('../image/Asset-1@4x-100-1-scaled.jpg'); background-size: cover; background-position: center;">
         <!-- Dark overlay (optional, for better contrast) -->
         <div style="position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.4);"></div>
       
         <!-- Centered card/box -->
-        <div class="container h-100 d-flex justify-content-end align-items-center position-relative">
+        <div class="container h-100 d-flex justify-content-end scroll-animate slideUp align-items-center position-relative">
           <div class="bg-white p-4 rounded shadow text-center" style="max-width: 900px; width: 100%;">
             <h3 class="mb-2 text-dark">when we give together, we rise together.</h3>
             <p class="text-dark txt mb-2">When you give, you're not just offering money or items — you're offering hope. You're planting seeds of kindness that grow in places most people never see. A warm meal, a blanket, a safe place to sleep — these simple things can mean everything to someone in need.
@@ -153,64 +154,74 @@
           </div>
         </div>
     </section>
-    <footer class="main-footer">
-      <div class="footer-content">
-        
-        <div class="footer-box">
-          <div class="logo2">
-            <img src="../image/YEG-removebg-preview.png"  class="bg-light" alt="">
-            
+    <footer class="footer scroll-animate slideUp">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 footer-section">
+                  <div class="footer-logo">
+                    <div>
+                      <a href="../index.html"><img src="../image/YEG-removebg-preview.png" alt="LOGO" width="100px" height="130px"></a>
+                    </div>
+                    <div class="yegtxt">
+                      YEG <span style="font-size: 13px;">Givers Support Centre Ltd</span>
+                    </div>
+                  </div>
+                  <p class="footer-about"> We welcome and support individuals of all backgrounds, ensuring equal 
+                    access to resources.</p>
+                  <div class="social-links">
+                      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 footer-section">
+                  <h5>Quick Links</h5>
+                  <ul class="footer-links">
+                      <li><a href="./about.html">About Us</a></li>
+                      <li><a href="../Services/service.html">Services</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="../Services/service.html">Donate Now</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 footer-section">
+                  <h5>Support</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">Food Donations</a></li>
+                    <li><a href="#"> Counseling Services</a></li>
+                    <li><a href="#"> Educational Programs</a></li>
+                    <li><a href="#"> FAQ</a></li>
+                    <li><a href="#"> Community Support Services</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-lg-4 footer-section">
+                  <h5>Newsletter</h5>
+                  <p class="footer-about">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                  <div class="footer-newsletter">
+                      <input type="email" placeholder="Enter your email">
+                      <button class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+                  </div>
+              </div>
           </div>
-          <div class="logo-txt2">
-            <h6> YEG <span>Givers Support Centre Ltd</span></h6>
-            
-        </div>
-          <p> We welcome and support individuals of all backgrounds, ensuring equal 
-            access to resources.</p>
-            <div class="top-right">
-                    
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color:  #ce0707;"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #ce0707 ;"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #ce0707;"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #ce0707;"><i class="fa-brands fa-instagram"></i></a>
-               
-            </div>
   
-        </div>
-    
-        
-        <div class="footer-box">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="../Services/service.html">Programs</a><li>
-            <li><a href="#">Cases</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-  
-       
-        <div class="footer-box">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#">Food Donations</a></li>
-            <li><a href="#"> Counseling Services</a></li>
-            <li><a href="#"> Educational Programs</a></li>
-            <li><a href="#"> Community Support Services</a></li>
-            <li><a href="#"> FAQ</a></li>
-          </ul>
-        </div>
-    
-       
+          <div class="footer-bottom">
+              <ul class="footer-bottom-links">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+              </ul>
+              <p>© <span id="year" style="font-weight: bold; font-style: italic;"></span> YEG. All rights reserved.</p>
+          </div>
       </div>
-  
-      <p class="text-center copyright ">Copyright ©2025 All rights reserved | This template is made by <span>X-ential Samuel</span></p>
-    </footer> 
-
-   
-  
+  </footer>
+    
     <script src="../script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>

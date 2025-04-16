@@ -44,17 +44,16 @@ header{
 
    
 }
-.nav-links{
+/* Navigation Links */
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   margin-right: 60px;
   text-decoration: none;
-  /* margin-bottom: 15px; */
-
-  
 }
+
 .links {
   text-decoration: none;
   display: flex;
@@ -65,21 +64,62 @@ header{
   justify-content: space-between;
   align-items: center;
   gap: 35px;
- 
 }
-.links li  {
-    list-style-type: none; 
+
+.links li {
+  list-style-type: none;
+  position: relative;
 }
+
+/* Link Style */
 .links li a {
   text-decoration: none;
   color: #000;
-  transition: all 0.3s ease-in-out;          
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
 }
-.links li a:hover{
-  color: #960404;
-  box-shadow: 0 0 10px 2px #9604049d;
+
+/* Sliding Underline on Hover */
+.links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #960404;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-in-out;
 }
-.btnn{
+
+/* Hover Effect */
+.links li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Slide-in from Left when not hovered */
+.links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #960404;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.links li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Button Style */
+.btnn {
   background-color: #ad0000;
   color: #fff;
   padding: 7px 30px;
@@ -89,12 +129,48 @@ header{
   font-size: 16px;
   margin-bottom: 15px;
   border: none;
-  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
-.btnn:hover{
+
+/* Ripple Effect */
+.btnn .ripple {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+/* Hover Effect */
+.btnn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(93, 4, 4, 0.923);
+  background-color: #b80000;
+}
+
+/* Ripple Animation */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Add ripple on click */
+.btnn:active .ripple {
+  animation: ripple 0.6s linear;
+}
+
+/* .btnn:hover{
   color: #fff;
  background-color: #520101;
-}
+} */
 .logo{
   display: flex;
   align-items: center;
@@ -335,114 +411,218 @@ position: relative;
 
 }
 
-
-.main-footer {
-  background-color: #12161bdf;
-  color: #fff;
-  padding: 2.2rem 1.5rem;
+.footer {
+  background: linear-gradient(to right, #ad0000, #5a3c3c);
+  color: #ffffff;
+  padding: 70px 0 30px;
   position: relative;
-  top: 290px;
+  overflow: hidden;
+  margin-top: 290px;
 }
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8rem;
-  max-width: 1200px;
-  margin: auto;
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, black, white);
 }
 
-.footer-box {
-  flex: 200px;
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, rgb(255, 255, 255), #5b0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.footer-box h4 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #fff;
+.yegtxt{
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.footer-box ul {
+.footer-about {
+  color: white;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer h5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 30px;
+  height: 2px;
+  background: white;
+}
+
+.footer-links {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.footer-box ul li {
-  margin-bottom: 0.5rem;
-  font-size: 18px;
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  transform: translateX(5px);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: black;
+  transform: translateY(-3px);
   color: #fff;
 }
 
-.footer-box ul li a {
-  color: #ddd;
-  text-decoration: none;
+.footer-newsletter {
+  position: relative;
+  margin-top: 20px;
 }
 
-.footer-box ul li a:hover {
-  color: #e41313;
-}
-
-
-.logo2{
-  display: flex;
-  align-items: center;
+.footer-newsletter input {
+  padding: 12px 15px;
+  border-radius: 25px;
   border: none;
-  /* margin-left: 60px ; */
-  padding: none;
-  line-height: 0;
-  /* margin-bottom: 90px; */
-                                          
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  padding-right: 50px;
 }
-.logo2 img{
-  height: 100px;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  /* vertical-align: middle; */
-  display: block;
-  margin: 0;
+
+.footer-newsletter input::placeholder {
+  color: #a4b5c6;
+}
+
+.newsletter-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ad0000;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background: black;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #a4b5c6;
+}
+
+.footer-bottom-links {
+  list-style: none;
   padding: 0;
-  border: none;
-  line-height: 0;
-}
-.logo-txt2 span{
-  color: #960404;
-}
-.logo-txt2{
-  font-size: 23px;
-}
-.logo-txt2 h1{
-  font-weight: 900;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.copyright{
-  margin-bottom: 0;
-  margin-top: 100px;
-  
-}
-.copyright span{
-  color: #ed0707;
-  font-weight: 900;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
+.footer-bottom-links a {
+  color: #a4b5c6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+      margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-bottom-links  {
+      flex-direction: column;
+  }
+}
 
 
+/* Scroll Animations */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
+.fade-in.visible {
+  opacity: 1;
+}
 
+/* Modern Scroll Animations */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s, opacity 1s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

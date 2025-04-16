@@ -34,7 +34,7 @@
             </div>
             <div class="white">
                 <div class="logo">
-                    <img src="../image/YEG-removebg-preview.png" alt="img">
+                    <a href="../index.html"><img src="../image/YEG-removebg-preview.png" alt="img"></a>
                     <div class="logo-txt ">
                         <h1> YEG <span>Givers Support Centre Ltd</span></h1>
                         
@@ -48,7 +48,7 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <button class=" btnn">Donate Now</button>
+                    <button class="btnn" onclick="createRipple(event)">Donate Now</button>
                
                     
                 </div>
@@ -61,11 +61,11 @@
             <a href="./service.html">Services</a>
             <a href="#">Blog +</a>
             <a href="#">Contact</a>
-            <button class="btnn" style="margin-left: 20px; margin-top: 20px; padding: 10px 20px;">Donate Now</button>
+            <button class="btnn" onclick="createRipple(event)" style="margin-left: 20px; margin-top: 20px; padding: 10px 20px;">Donate Now</button>
           </div>               
         </nav>    
     </header>
-    <div class="about">
+    <div class="about scroll-animate slideUp">
         <div class="about-text text-light">
             <h1>Services</h1>
            
@@ -73,7 +73,7 @@
         <div class="about-img">
          </div>
     </div>
-    <section class="secfive py-5">
+    <section class="secfive py-5 scroll-animate slideUp">
         <div class="container">
           <h2 class="text-center text-dark mb-4">Household Essentials Donation</h2>
           <p class="text-center cardp mb-5 text-bold">
@@ -116,7 +116,7 @@
         </div>
 
       </section>
-      <section class=" secfour py-5 bg-light">
+      <section class=" secfour py-5 bg-light scroll-animate slideUp">
         <div class="container">
           <h2 class="text-center text-light mb-4">Food Donation</h2>
           <p class="text-center cardp mb-5 text-light">
@@ -158,7 +158,7 @@
           </div>
         </div>
       </section>
-      <section class="secss py-5">
+      <section class="secss py-5 scroll-animate slideUp">
         <div class="container">
           <h2 class="text-center text-dark mb-4">Education Programs Opportunities</h2>
           <p class="text-center cardp mb-5 text-bold">
@@ -202,7 +202,7 @@
         </div>
 
       </section>
-      <section class="secss py-5">
+      <section class="secss py-5 scroll-animate slideUp">
         <div class="container">
           <h2 class="text-center text-dark mb-4"> Community Support Services</h2>
           <p class="text-center cardp mb-5 text-bold">
@@ -247,64 +247,75 @@
 
       </section>
      
-    <footer class="main-footer">
-      <div class="footer-content">
-        
-        <div class="footer-box">
-          <div class="logo2">
-            <img src="../image/YEG-removebg-preview.png"  class="bg-light" alt="">
-            
+    <!-- FOOTER  -->
+    <footer class="footer scroll-animate slideUp">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 footer-section">
+                  <div class="footer-logo">
+                    <div>
+                      <a href="../index.html"><img src="../image/YEG-removebg-preview.png" alt="LOGO" width="100px" height="130px"></a>
+                    </div>
+                    <div class="yegtxt">
+                      YEG <span style="font-size: 13px;">Givers Support Centre Ltd</span>
+                    </div>
+                  </div>
+                  <p class="footer-about"> We welcome and support individuals of all backgrounds, ensuring equal 
+                    access to resources.</p>
+                  <div class="social-links">
+                      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 footer-section">
+                  <h5>Quick Links</h5>
+                  <ul class="footer-links">
+                      <li><a href="../About/about.html">About Us</a></li>
+                      <li><a href="./service.html">Services</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Donate Now</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 footer-section">
+                  <h5>Support</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">Food Donations</a></li>
+                    <li><a href="#"> Counseling Services</a></li>
+                    <li><a href="#"> Educational Programs</a></li>
+                    <li><a href="#"> FAQ</a></li>
+                    <li><a href="#"> Community Support Services</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-lg-4 footer-section">
+                  <h5>Newsletter</h5>
+                  <p class="footer-about">Subscribe to our newsletter for updates, news, and exclusive offers.</p>
+                  <div class="footer-newsletter">
+                      <input type="email" placeholder="Enter your email">
+                      <button class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+                  </div>
+              </div>
           </div>
-          <div class="logo-txt2">
-            <h6> YEG <span>Givers Support Centre Ltd</span></h6>
-            
-        </div>
-          <p> We welcome and support individuals of all backgrounds, ensuring equal 
-            access to resources.</p>
-            <div class="top-right">
-                    
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color:  #ce0707;"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #ce0707 ;"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #ce0707;"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #ce0707;"><i class="fa-brands fa-instagram"></i></a>
-               
-            </div>
   
-        </div>
-    
-        
-        <div class="footer-box">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../About/about.html">About</a></li>
-            <li><a href="./service.html">Programs</a></li>
-            <li><a href="#">Cases</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-  
-       
-        <div class="footer-box">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#">Food Donations</a></li>
-            <li><a href="#"> Counseling Services</a></li>
-            <li><a href="#"> Educational Programs</a></li>
-            <li><a href="#"> Community Support Services</a></li>
-            <li><a href="#"> FAQ</a></li>
-          </ul>
-        </div>
-    
-       
+          <div class="footer-bottom">
+              <ul class="footer-bottom-links">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+              </ul>
+              <p>© <span id="year" style="font-weight: bold; font-style: italic;"></span> YEG. All rights reserved.</p>
+          </div>
       </div>
-  
-      <p class="text-center copyright ">Copyright ©2025 All rights reserved | This template is made by <span>X-ential Samuel</span></p>
-    </footer> 
-
-   
-  
+  </footer>
+    
     <script src="../script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>
