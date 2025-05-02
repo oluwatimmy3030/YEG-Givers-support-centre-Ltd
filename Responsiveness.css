@@ -13,6 +13,10 @@
   .img-{
     width: 600px;
   }
+  .logo{
+    margin-left: 30px;
+  }
+
 }
 @media (max-width: 1360px) {
   .who{
@@ -29,6 +33,19 @@
   }
 }
 
+
+@media (max-width: 1127px) {
+  .nav-links{
+    display: none;  
+  }
+  .menu{
+    display: block;
+    margin-right: 40px;
+  }
+  .logo{
+    margin-left: 30px;
+  }
+}
 @media (max-width: 1111px) {
 
     body{

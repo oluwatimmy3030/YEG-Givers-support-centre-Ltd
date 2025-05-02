@@ -21,6 +21,12 @@
         width: 100%;
     }
 }
+@media(max-width: 998px) {
+    .hist{
+        line-height: 20px;
+        margin-top: 50px;
+       }
+}
 @media(max-width: 768px) {
     .about h1{
         font-size: 3rem;
@@ -28,6 +34,15 @@
     }
     .author-box, .coauthor-box {
         border-radius: 20px; /* Rounded on all corners on small screens */
+      }
+      .his{
+       font-size: 12px;
+       line-height: 20px;
+       margin-top: 10px;
+      }
+      .hist{
+        margin-top: 40px;
+        line-height: 20px;
       }
 }
 
