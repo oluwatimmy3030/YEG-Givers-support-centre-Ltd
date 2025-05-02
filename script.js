@@ -8,6 +8,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+
 const yearEl = document.getElementById("year")
 const currentYear = new Date().getFullYear()
 yearEl.textContent = currentYear
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       observer.observe(element);
     });
   });
+
 
   
   function createRipple(event) {

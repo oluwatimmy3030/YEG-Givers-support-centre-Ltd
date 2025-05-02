@@ -251,7 +251,66 @@ header{
   font-family: "Playwrite GB S", serif;
 
 
+}/* Add the dropdown styles for desktop */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-side {
+  position: relative;
+}
+
+.dropdown-side > a {
+  cursor: pointer;
+}
+
+.dropdown-content-side {
+  display: none;
+  flex-direction: column;
+  background-color: #5b5959;
+  padding-left: 20px;
+}
+
+.dropdown-content-side a {
+  font-size: 20px;
+  padding: 10px 0;
+  color: #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content-side a:hover {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.dropdown-side:hover .dropdown-content-side {
+  display: flex;
+}
+
+
 
 .sidenav a:hover {
   color: #151414;

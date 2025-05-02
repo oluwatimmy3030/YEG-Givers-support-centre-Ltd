@@ -12,57 +12,109 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="red-top">
-                <div class="top-left">
-                    <i class="fas fa-phone"></i>
-                    <span>1-800-123-4567</span>
-                    <i class="fas fa-envelope"></i>
-                    <span>info@yeggivers.com</span>
-                </div>
-                <div class="top-right">
-                  
-                  <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-whatsapp"></i></a>
-                  <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-instagram"></i></a>
-                   
+  <header>
+    <nav>
+        <div class="red-top">
+            <div class="top-left">
+                <i class="fas fa-phone"></i>
+                <span>1-800-123-4567</span>
+                <i class="fas fa-envelope"></i>
+                <span>info@yeggivers.com</span>
+            </div>
+            <div class="top-right">
+                <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.link/87xbh3" style="text-decoration: none; color: #fff ;"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="white">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/YEG-removebg-preview.png" alt="img"></a>
+                <div class="logo-txt">
+                    <h1> YEG <span>Givers Support Centre Ltd</span></h1>
                 </div>
             </div>
-            <div class="white">
-                <div class="logo">
-                    <a href="./index.html"><img src="./image/YEG-removebg-preview.png" alt="img"></a>
-                    <div class="logo-txt">
-                        <h1> YEG <span>Givers Support Centre Ltd</span></h1>
-                        
-                    </div>
-                </div>
-                <div class="nav-links">
-                    <ul class="links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./About/about.html">About</a></li>
-                        <li><a href="./Services/service.html">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <button class=" btnn" onclick="createRipple(event)">Donate Now</button>
-               
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="./Services/service.html">Programs and Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./Services/service.html#food">Food Hamper</a></li>
+                            <li><a href="./Services/service.html#house">Small Household Items </a></li>
+                            <li><a href="./Services/service.html#employment">Employment Support</a></li>
+                            <li><a href="./Services/service.html#handwork">Small Handwork Training </a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./About/about.html">About</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./About/about.html">About YGSCL</a></li>
+                            <li><a href="./About/meet-the-team.html">Meet the Team</a></li>
+                            <li><a href="./About/history.html">History</a></li>
+                            <li><a href="./About/career-opportunities.html">Career/Volunteer Opportunities</a></li>
+                            <li><a href="./Contact/contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ways to Give</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Become a Monthly Donor</a></li>
+                        </ul>
+                    </li>
                     
-                </div>
+                    <li><a href="./Contact/contact.html">Contact</a></li>
+                </ul>
+                <button class="btnn" onclick="createRipple(event)">Donate Now</button>
+            </div>
 
-                <button class="menu" onclick="openNav()">Menu <i class="fas fa-bars"></iclass></i></button>
-                <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="./index.html">Home</a>
-            <a href="./About/about.html">About</a>
-            <a href="./Services/service.html">Services</a>
-            <a href="#">Blog +</a>
-            <a href="#">Contact</a>
-            <button class="btnn" onclick="createRipple(event)" style="margin-left: 20px; margin-top: 20px; padding: 10px 20px;">Donate Now</button>
-          </div>               
+            <button class="menu" onclick="openNav()">Menu <i class="fas fa-bars"></i></button>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <li><a href="./index.html">Home</a></li>
+              <div class="dropdown-side">
+                <a href="./Services/service.html">Programs & Services</a>
+                <div class="dropdown-content-side">
+                  <a href="./Services/service.html#food">Food Hamper</a>
+                  <a href="./Services/service.html#house">Small Household Items</a>
+                  <a href="./Services/service.html#employment">Employment Support</a>
+                  <a href="./Services/service.html#handwork">Small Handwork Training</a>
+                </div>
+              </div>
+            
+              <div class="dropdown-side">
+                <a href="./About/about.html">About</a>
+                <div class="dropdown-content-side">
+                  <a href="#">About YGSCL</a>
+                  <a href="#">Meet the Team</a>
+                  <a href="#">History</a>
+                  <a href="#">Career/Volunteer Opportunities</a>
+                  <a href="./Contact/contact.html">Contact</a>
+                </div>
+              </div>
+            
+              <div class="dropdown-side">
+                <a href="#">Ways to Give</a>
+                <div class="dropdown-content-side">
+                  <a href="#">Membership</a>
+                  <a href="#">Become a Monthly Donor</a>
+                  <a href="#">Donate ($10 - $100)</a>
+                </div>
+              </div>
+            
+              
+              
+              <a href="./Contact/contact.html">Contact</a>
+            
+              <button class="btnn" onclick="createRipple(event)" style="margin-left: 20px; margin-top: 20px; padding: 10px 20px;">Donate Now</button>
+            </div>
+            
+                        
         </nav>    
-    </header>
+</header>
+
   <section class="secone">
    
         <div id="myCarousel" class="carousel slide itemcarou1" data-bs-ride="carousel">
@@ -335,7 +387,7 @@
                     <li><a href="./About/about.html">About Us</a></li>
                     <li><a href="./Services/service.html">Services</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./Contact/contact.html">Contact</a></li>
                     <li><a href="#">Donate Now</a></li>
                 </ul>
             </div>
