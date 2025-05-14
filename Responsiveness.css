@@ -105,14 +105,16 @@
 
  
 
-
-@media (max-width: 680px) {
-  .top-left{
-    margin-left: 15px;
+@media (max-width: 780px) {
+   .top-left{
+    margin-left: 20px;
   }
   .top-right{
-    margin-right: 20px
+    margin-right: 24px
 }
+}
+@media (max-width: 680px) {
+ 
   .oneh1{
     font-size: 35px;
   }
@@ -126,10 +128,13 @@
     margin-right: 0;
   } */
 }
-@media (max-width: 570px) {
+@media (max-width: 665px) {
   .red-top{
     display: none;
   }
+}
+@media (max-width: 570px) {
+  
   .secone{
    top: 90px;
   }
